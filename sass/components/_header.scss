@@ -1,0 +1,21 @@
+/* Навигация хедер */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary-background-color);
+    border-bottom: 1px solid var(--header-border);
+}
+.header-div {
+    display: flex;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+}
+
+/* Навигация хедер конец */

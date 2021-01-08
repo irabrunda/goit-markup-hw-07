@@ -1,0 +1,43 @@
+.header .contacts {
+    display: flex;
+    align-items: center;
+    margin-left: 305px;
+}
+.contacts a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.contacts .item {
+    display: inline-flex;
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts .item + .item {
+    margin-left: 30px;
+}
+.contacts .mail-top {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+.contacts .tel-top {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+.contacts-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contacts .item:hover,
+.contacts .item:focus {
+    color: var(--accent-color);
+}
