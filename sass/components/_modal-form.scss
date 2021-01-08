@@ -1,0 +1,188 @@
+/* Форма модальное окно */
+.form-div .form-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color) ;
+}
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+.form-field {
+    position: relative;
+    content: "";
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+.form-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 12px 12px 12px 42px;
+    
+    font: inherit;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: none;
+}
+.form-field label {
+    margin-bottom: 4px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: var(--secondary-text-color);
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+.modal-form input::placeholder {
+  cursor: pointer;
+}
+.modal-form input:focus::placeholder {
+  cursor: pointer;
+}
+.modal-form input:focus ~ svg {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+.icon-form {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 12px;
+    display: block;
+
+    transform: translateY(-30%);
+  }
+.icon-symbol {
+    width: 18px;
+    height: 18px;
+  }
+.form-input:focus + .icon-form {
+    fill: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.form-label-text {
+    resize: none;
+    outline: none;
+
+    width: 100%;
+    max-height: 120px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+
+    border-radius: 4px;    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.form-label-text::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.01;
+
+    color: var(--secondary-text-color);
+    opacity: 0.5;
+}
+.form-checkbox {
+    /* display: flex;
+    margin: auto; */
+    position: relative;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+}
+.form-checkbox a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+.agreement-link::after {
+    position: absolute;
+    right: 17px;
+    bottom: 6px;
+    z-index: 3;
+
+    content: "";
+    display: block;
+    width: 29%;
+    height: 1px;
+    border: none;
+    
+    background-color: var(--accent-color);
+}
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+
+    clip: rect(0 0 0 0);
+}
+.checkbox-new::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+
+    border-radius: 2px;    
+    color: var(--primary-text-color);
+    background-image: url(./images/icons/checkbox.svg);
+}
+.checkbox-input:checked + .checkbox-new::after{
+    background-color: var(--accent-color);
+    background-image: url(./images/icons/checkmark.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 11px 8px;
+}
+.submit-form {
+    position: absolute;
+    bottom: 40px;
+    left: 165px;
+    width: 200px;
+    height: 50px;
+    /* padding: 10px 55px 10px 56px; */
+    
+    font-weight: 700;
+    font-style: 20;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+
+    border: none;
+    border-radius: 4px;
+    box-shadow: var(--button-shadow);
+
+    color: var(--light-color);
+    background-color: var(--accent-color);
+}
+.submit-form:hover,
+.submit-form:focus {
+    background-color: var(--button-bg-color);
+}
+/* Форма модальное окно конец*/

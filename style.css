@@ -322,7 +322,6 @@ a {
 }
 /* Чем мы занимаемся конец */
 
-
 /* Наша команда */
 .team {
     background: var(--inactive-filter-color);
@@ -1041,7 +1040,6 @@ a {
     background-position: 50% 50%;
     background-size: 11px 8px;
 }
-
 .submit-form {
     position: absolute;
     bottom: 40px;

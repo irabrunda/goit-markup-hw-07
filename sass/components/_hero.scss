@@ -1,0 +1,36 @@
+/* Герой */
+.hero-section {
+    background: var(--secondary-background-color);
+    color: var(--light-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.hero-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-bg {
+    margin: 0 auto;
+    max-width: 1600px;
+    background-color: var(--secondary-background-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/Img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero-section .hero-title {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+/* Герой конец*/
