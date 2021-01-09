@@ -1,8 +1,9 @@
 /* Навигация хедер */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %centeredFlex;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 
     background: $primary-background-color;
     border-bottom: 1px solid $header-border;

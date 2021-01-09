@@ -28,21 +28,17 @@
 }
 .clients-img .link-svg {
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %centeredFlex;
     width: 168px;
     height: 88px;
     text-align: center;
 
     color: $icon-primary;
     background-color: $primary-background-color;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    @extend %bgCommon;
+
     border: 1px solid $icon-primary;
     border-radius: 4px;
-
     transition: color $duration-time $timing-func, border-color $duration-time $timing-func;
 }
 .client-logo {

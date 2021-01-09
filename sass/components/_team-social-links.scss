@@ -1,8 +1,6 @@
 /* Наша команда соцсети */
 .team-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %centeredFlex;
     margin: 0;
     padding: 0;
     color: $icon-primary;
@@ -17,9 +15,7 @@
 }
 .link .social-icon {
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %centeredFlex;
     padding: 0;
     border: none;
 
@@ -29,11 +25,8 @@
 
     color: $icon-primary;
     background-color: $primary-background-color;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-position: center;
-
+    @extend %bgCommon;
+    
     transition: color $duration-time $timing-func, background-color $duration-time $timing-func;
 }
 .team-social-icon {

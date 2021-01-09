@@ -1,6 +1,7 @@
 .header .contacts {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    @extend %centeredFlex;
     margin-left: 305px;
 }
 .contacts a {

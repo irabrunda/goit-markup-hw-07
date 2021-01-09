@@ -272,7 +272,7 @@ summary {
 }
 
 .section {
-  background-color: var(--primary-background-color);
+  background-color: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -301,12 +301,12 @@ summary {
 /* Навигация хедер конец */
 .logo-main {
   margin-right: 93px;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 .logo-studio {
@@ -326,7 +326,7 @@ a {
   position: relative;
   display: inline-block;
   padding-bottom: 28px;
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 .top-link.current::after {
@@ -339,7 +339,7 @@ a {
   height: 4px;
   border: none;
   border-radius: 2px;
-  background-color: var(--accent-color);
+  background-color: #2196F3;
   transform: scaleX(1);
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -370,13 +370,13 @@ a {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-top .top-link:hover,
 .nav-top .top-link:focus {
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 .header .contacts {
@@ -406,7 +406,7 @@ a {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: #757575;
 }
 
 .contacts .tel-top {
@@ -415,7 +415,7 @@ a {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: #757575;
 }
 
 .contacts-icon {
@@ -425,13 +425,13 @@ a {
 
 .contacts .item:hover,
 .contacts .item:focus {
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 /* Герой */
 .hero-section {
-  background: var(--secondary-background-color);
-  color: var(--light-color);
+  background: #2F303A;
+  color: #FFFFFF;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -446,8 +446,8 @@ a {
 .hero-bg {
   margin: 0 auto;
   max-width: 1600px;
-  background-color: var(--secondary-background-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/Img.jpg);
+  background-color: #2F303A;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -470,15 +470,15 @@ a {
 .hero-section .hero-button {
   display: block;
   padding: 8px 30px;
-  background-color: var(--button-bg-color);
+  background-color: #188CE8;
   border: none;
-  box-shadow: 0 4px 4px var(--button-shadow);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--light-color);
+  color: #FFFFFF;
   cursor: pointer;
 }
 
@@ -505,7 +505,7 @@ a {
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-text-color);
+  color: #212121;
 }
 
 .features p {
@@ -515,7 +515,7 @@ a {
   font-size: 14px;
   line-height: 1.786;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: #757575;
 }
 
 .feature-icon-div {
@@ -525,7 +525,7 @@ a {
   padding: 0;
   width: 270px;
   height: 120px;
-  background-color: var(--inactive-filter-color);
+  background-color: #F5F4FA;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -541,7 +541,7 @@ a {
 /* Особенности конец*/
 /* Чем мы занимаемся */
 .work {
-  background-color: var(--primary-background-color);
+  background-color: #ffffff;
   padding-top: 0px;
 }
 
@@ -552,7 +552,7 @@ a {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #212121;
 }
 
 .work-images {
@@ -585,8 +585,8 @@ a {
   bottom: 0;
   width: 370px;
   height: 70px;
-  background: var(--secondary-background-color);
-  color: var(--light-color);
+  background: #2F303A;
+  color: #FFFFFF;
   opacity: 80%;
 }
 
@@ -604,7 +604,7 @@ a {
 /* Чем мы занимаемся конец */
 /* Наша команда */
 .team {
-  background: var(--inactive-filter-color);
+  background: #F5F4FA;
 }
 
 .team .team-h {
@@ -614,7 +614,7 @@ a {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #212121;
 }
 
 .team-members {
@@ -628,7 +628,7 @@ a {
   list-style: none;
   width: 270px;
   text-align: center;
-  background: var(--primary-background-color);
+  background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -655,7 +655,7 @@ a {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #212121;
 }
 
 .team .team-members p {
@@ -664,7 +664,7 @@ a {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: #757575;
 }
 
 /* Наша команда конец*/
@@ -675,7 +675,7 @@ a {
   align-items: center;
   margin: 0;
   padding: 0;
-  color: var(--icon-primary);
+  color: #AFB1B8;
 }
 
 .team-social .link + .link {
@@ -698,8 +698,8 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--icon-primary);
-  background-color: var(--primary-background-color);
+  color: #AFB1B8;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -716,14 +716,14 @@ a {
 
 .link .social-icon:hover,
 .link .social-icon:focus {
-  color: var(--light-color);
-  background-color: var(--accent-color);
+  color: #FFFFFF;
+  background-color: #2196F3;
 }
 
 /* Наша команда соцсети конец */
 /* Постоянные клиенты */
 .clients {
-  background-color: var(--primary-background-color);
+  background-color: #ffffff;
 }
 
 .clients-h {
@@ -733,7 +733,7 @@ a {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #212121;
 }
 
 .clients-img {
@@ -761,8 +761,8 @@ a {
   width: 168px;
   height: 88px;
   text-align: center;
-  color: var(--icon-primary);
-  background-color: var(--primary-background-color);
+  color: #AFB1B8;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -777,14 +777,14 @@ a {
 
 .clients-img .link-svg:hover,
 .clients-img .link-svg:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: #2196F3;
+  border-color: #2196F3;
 }
 
 /* Постоянные клиенты конец */
 /* Футер */
 .footer {
-  background: var(--secondary-background-color);
+  background: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -798,16 +798,16 @@ a {
 .footer .logo-footer {
   display: block;
   margin-bottom: 20px;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 .logo-footer .studio-footer {
-  color: var(--light-color);
+  color: #FFFFFF;
 }
 
 .address-footer {
@@ -817,7 +817,7 @@ a {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--light-color);
+  color: #FFFFFF;
 }
 
 .address-footer a {
@@ -840,7 +840,7 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--light-color);
+  color: #FFFFFF;
 }
 
 .smm-icons {
@@ -863,7 +863,7 @@ a {
   align-items: center;
   width: 44px;
   height: 44px;
-  color: var(--light-color);
+  color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
   background-repeat: no-repeat;
   background-size: contain;
@@ -881,7 +881,7 @@ a {
 
 .smm-icons a:hover,
 .smm-icons a:focus {
-  background-color: var(--accent-color);
+  background-color: #2196F3;
 }
 
 /* Соцсети Футер конец */
@@ -899,7 +899,7 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--light-color);
+  color: #FFFFFF;
 }
 
 .footer-form {
@@ -911,7 +911,7 @@ a {
   height: 50px;
   padding: 15px 16px;
   color: rgba(255, 255, 255, 0.6);
-  background-color: var(--secondary-background-color);
+  background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
@@ -938,8 +938,8 @@ a {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--light-color);
-  background-color: var(--accent-color);
+  color: #FFFFFF;
+  background-color: #2196F3;
   cursor: pointer;
   scale: 1;
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -999,7 +999,7 @@ a {
   height: 30px;
   padding: 0;
   color: #000000;
-  background-color: var(--primary-background-color);
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1023,7 +1023,7 @@ a {
 
 .modal-close:hover,
 .model-close:focus {
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 /* модальное окно конец */
@@ -1036,7 +1036,7 @@ a {
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #212121;
 }
 
 .modal-form {
@@ -1069,12 +1069,12 @@ a {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--secondary-text-color);
+  color: #757575;
 }
 
 .modal-form input:focus,
 .modal-form textarea:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid #2196F3;
   cursor: pointer;
 }
 
@@ -1087,7 +1087,7 @@ a {
 }
 
 .modal-form input:focus ~ svg {
-  fill: var(--accent-color);
+  fill: #2196F3;
   cursor: pointer;
 }
 
@@ -1106,7 +1106,7 @@ a {
 }
 
 .form-input:focus + .icon-form {
-  fill: var(--accent-color);
+  fill: #2196F3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1126,7 +1126,7 @@ a {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01;
-  color: var(--secondary-text-color);
+  color: #757575;
   opacity: 0.5;
 }
 
@@ -1138,11 +1138,11 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: #757575;
 }
 
 .form-checkbox a {
-  color: var(--accent-color);
+  color: #2196F3;
   text-decoration: none;
 }
 
@@ -1156,7 +1156,7 @@ a {
   width: 29%;
   height: 1px;
   border: none;
-  background-color: var(--accent-color);
+  background-color: #2196F3;
 }
 
 .checkbox-label {
@@ -1182,39 +1182,16 @@ a {
   height: 15px;
   margin-right: 8px;
   border-radius: 2px;
-  color: var(--primary-text-color);
+  color: #212121;
   background-image: url(./images/icons/checkbox.svg);
 }
 
 .checkbox-input:checked + .checkbox-new::after {
-  background-color: var(--accent-color);
+  background-color: #2196F3;
   background-image: url(./images/icons/checkmark.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 11px 8px;
-}
-
-.submit-form {
-  position: absolute;
-  bottom: 40px;
-  left: 165px;
-  width: 200px;
-  height: 50px;
-  /* padding: 10px 55px 10px 56px; */
-  font-weight: 700;
-  font-style: 20;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  border: none;
-  border-radius: 4px;
-  box-shadow: var(--button-shadow);
-  color: var(--light-color);
-  background-color: var(--accent-color);
-}
-
-.submit-form:hover,
-.submit-form:focus {
-  background-color: var(--button-bg-color);
 }
 
 /* Форма модальное окно конец*/
@@ -1231,14 +1208,14 @@ a {
   letter-spacing: 0.03em;
   border: none;
   border-radius: 4px;
-  box-shadow: var(--button-shadow);
-  color: var(--light-color);
-  background-color: var(--accent-color);
+  box-shadow: rgba(0, 0, 0, 0.15);
+  color: #FFFFFF;
+  background-color: #2196F3;
 }
 
 .submit-form:hover,
 .submit-form:focus {
-  background-color: var(--button-bg-color);
+  background-color: #188CE8;
 }
 
 /* Фильтры */
@@ -1264,8 +1241,8 @@ a {
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  background-color: var(--inactive-filter-color);
+  color: #212121;
+  background-color: #F5F4FA;
   border: none;
   border-radius: 4px;
   box-shadow: none;
@@ -1274,8 +1251,8 @@ a {
 
 .filters .filter:hover,
 .filters .filter:focus {
-  color: var(--light-color);
-  background: var(--accent-color);
+  color: #FFFFFF;
+  background: #2196F3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border: none;
   border-radius: 4px;
@@ -1297,7 +1274,7 @@ a {
   margin-bottom: 30px;
   margin-right: 30px;
   max-width: auto;
-  background: var(--light-color);
+  background: #FFFFFF;
 }
 
 .products .item:nth-child(n+7) {
@@ -1339,7 +1316,7 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primary-text-color);
+  color: #212121;
 }
 
 .products p {
@@ -1348,7 +1325,7 @@ a {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: #757575;
 }
 
 .product-link:hover .product-overlay,
@@ -1374,7 +1351,7 @@ a {
   width: 100%;
   height: 100%;
   padding: 63px 24px;
-  background-color: var(--accent-color);
+  background-color: #2196F3;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1384,7 +1361,7 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-  color: var(--light-color);
+  color: #FFFFFF;
 }
 
 /* Проекты конец */

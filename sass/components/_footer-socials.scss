@@ -26,17 +26,13 @@
     margin-left: 10px;
 }
 .smm-icons .f-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %centeredFlex;
     width: 44px;
     height: 44px;
     color: $light-color;
 
     background-color: rgba(255, 255, 255, 0.1);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    @extend %bgCommon;
     border-radius: 50%;
 
     transition: background-color $duration-time $timing-func;

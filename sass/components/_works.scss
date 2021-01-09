@@ -33,9 +33,7 @@
 }
 .work-descript {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %centeredFlex;
     bottom: 0;
     width: 370px;
     height: 70px;

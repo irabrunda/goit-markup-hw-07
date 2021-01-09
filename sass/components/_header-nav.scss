@@ -1,6 +1,7 @@
 .site-nav {    
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    @extend %centeredFlex;
 }
 a {
     text-decoration: none;
@@ -33,10 +34,11 @@ a {
 }
 .nav-top {
     list-style: none;
-    display: flex;
+    // display: flex;
+    // align-items: center;
+    @extend %centeredFlex;
     margin: 0;
     padding-left: 0;
-    align-items: center;
 }
 .nav-top .item + .item {
     margin-left: 50px;

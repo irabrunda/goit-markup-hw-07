@@ -1,7 +1,8 @@
 /* Фильтры */
 .filters {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    @extend %centeredFlex;
     margin: 0 0 50px 0;
     padding: 0;
 }
