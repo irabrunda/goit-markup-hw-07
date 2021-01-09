@@ -277,11 +277,29 @@ summary {
   padding-bottom: 94px;
 }
 
-/* Навигация хедер */
-.header {
+.filters, .checkbox-label, .footer-input::placeholder, .smm-icons .f-link, .clients-img .link-svg, .link .social-icon, .team-social, .work-descript, .feature-icon-div, .hero-div, .header .contacts, .nav-top, .site-nav, .header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal-close, .smm-icons .f-link, .clients-img .link-svg, .link .social-icon, .feature-icon-div, .hero-bg {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.contacts .tel-top, .contacts .mail-top, .nav-top a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+/* Навигация хедер */
+.header {
   background: #ffffff;
   border-bottom: 1px solid #ECECEC;
 }
@@ -311,11 +329,6 @@ summary {
 
 .logo-studio {
   color: #000000;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
 }
 
 a {
@@ -351,10 +364,8 @@ a {
 
 .nav-top {
   list-style: none;
-  display: flex;
   margin: 0;
   padding-left: 0;
-  align-items: center;
 }
 
 .nav-top .item + .item {
@@ -366,11 +377,6 @@ a {
   justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -380,8 +386,6 @@ a {
 }
 
 .header .contacts {
-  display: flex;
-  align-items: center;
   margin-left: 305px;
 }
 
@@ -398,24 +402,6 @@ a {
 
 .contacts .item + .item {
   margin-left: 30px;
-}
-
-.contacts .mail-top {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-
-.contacts .tel-top {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #757575;
 }
 
 .contacts-icon {
@@ -437,19 +423,14 @@ a {
 }
 
 .hero-div {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero-bg {
   margin: 0 auto;
   max-width: 1600px;
   background-color: #2F303A;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/Img.jpg);
 }
 
 .hero-section .hero-title {
@@ -509,8 +490,8 @@ a {
 }
 
 .features p {
-  margin: 0;
   display: flex;
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.786;
@@ -519,16 +500,10 @@ a {
 }
 
 .feature-icon-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0;
   width: 270px;
   height: 120px;
   background-color: #F5F4FA;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   border: none;
 }
 
@@ -579,9 +554,6 @@ a {
 
 .work-descript {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   bottom: 0;
   width: 370px;
   height: 70px;
@@ -670,9 +642,6 @@ a {
 /* Наша команда конец*/
 /* Наша команда соцсети */
 .team-social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 0;
   color: #AFB1B8;
@@ -690,9 +659,6 @@ a {
 
 .link .social-icon {
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0;
   border: none;
   width: 44px;
@@ -700,10 +666,6 @@ a {
   border-radius: 50%;
   color: #AFB1B8;
   background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-position: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -755,17 +717,11 @@ a {
 
 .clients-img .link-svg {
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 168px;
   height: 88px;
   text-align: center;
   color: #AFB1B8;
   background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -858,16 +814,10 @@ a {
 }
 
 .smm-icons .f-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -917,8 +867,6 @@ a {
 }
 
 .footer-input::placeholder {
-  display: flex;
-  align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -980,7 +928,7 @@ a {
   width: 528px;
   height: 581px;
   padding: 40px;
-  background-color: #fff;
+  background-color: #ffffff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
@@ -1000,9 +948,6 @@ a {
   padding: 0;
   color: #000000;
   background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1159,11 +1104,6 @@ a {
   background-color: #2196F3;
 }
 
-.checkbox-label {
-  display: flex;
-  align-items: center;
-}
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -1183,12 +1123,12 @@ a {
   margin-right: 8px;
   border-radius: 2px;
   color: #212121;
-  background-image: url(./images/icons/checkbox.svg);
+  background-image: url(../../images/icons/checkbox.svg);
 }
 
 .checkbox-input:checked + .checkbox-new::after {
   background-color: #2196F3;
-  background-image: url(./images/icons/checkmark.svg);
+  background-image: url(../../images/icons/checkmark.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 11px 8px;
@@ -1220,8 +1160,6 @@ a {
 
 /* Фильтры */
 .filters {
-  display: flex;
-  justify-content: center;
   margin: 0 0 50px 0;
   padding: 0;
 }
