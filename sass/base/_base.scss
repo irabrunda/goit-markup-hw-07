@@ -2,7 +2,7 @@
     font-family: $main-font;
 }
 .section {
-    background-color: var(--primary-background-color);
+    background-color: $primary-background-color;
     padding-top: 94px;
     padding-bottom: 94px;
 }

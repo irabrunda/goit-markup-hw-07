@@ -12,7 +12,7 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--light-color);
+    color: $light-color;
 }
 .smm-icons {
     display: flex;
@@ -31,7 +31,7 @@
     align-items: center;
     width: 44px;
     height: 44px;
-    color: var(--light-color);
+    color: $light-color;
 
     background-color: rgba(255, 255, 255, 0.1);
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@
     background-position: center;
     border-radius: 50%;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color $duration-time $timing-func;
 }
 .footer-icon {
     width: 20px;
@@ -49,6 +49,6 @@
 }
 .smm-icons a:hover,
 .smm-icons a:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 }
 /* Соцсети Футер конец */

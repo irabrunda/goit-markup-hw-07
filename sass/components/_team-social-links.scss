@@ -5,7 +5,7 @@
     align-items: center;
     margin: 0;
     padding: 0;
-    color: var(--icon-primary);
+    color: $icon-primary;
 }
 .team-social .link + .link {
     margin-left: 10px;
@@ -27,14 +27,14 @@
     height: 44px;
     border-radius: 50%;
 
-    color: var(--icon-primary);
-    background-color: var(--primary-background-color);
+    color: $icon-primary;
+    background-color: $primary-background-color;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     background-position: center;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color $duration-time $timing-func, background-color $duration-time $timing-func;
 }
 .team-social-icon {
     width: 20px;
@@ -44,7 +44,7 @@
 }
 .link .social-icon:hover,
 .link .social-icon:focus {
-    color: var(--light-color);
-    background-color: var(--accent-color);
+    color: $light-color;
+    background-color: $accent-color;
 }
 /* Наша команда соцсети конец */

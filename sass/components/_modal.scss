@@ -8,7 +8,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity $duration-time $timing-func;
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -27,7 +27,7 @@
     
     background-color: #fff;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform $duration-time $timing-func;
     
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -44,8 +44,8 @@
     height: 30px;
     padding: 0;
 
-    color: #000000;
-    background-color: var(--primary-background-color);
+    color: $dark-color;
+    background-color: $primary-background-color;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -53,7 +53,7 @@
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color $duration-time $timing-func;
     cursor: pointer;
 }
 .close-icon {
@@ -65,10 +65,10 @@
     height: 18px;
     fill: currentColor;
     border-radius: 50%;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color $duration-time $timing-func;
 }
 .modal-close:hover,
 .model-close:focus {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 /* модальное окно конец */

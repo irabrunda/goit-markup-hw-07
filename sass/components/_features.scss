@@ -19,7 +19,7 @@
     line-height: 1.143;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
 }
 .features p {
     margin: 0;
@@ -28,7 +28,7 @@
     font-size: 14px;
     line-height: 1.786;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
 }
 .feature-icon-div {
     display: flex;
@@ -38,7 +38,7 @@
     width: 270px;
     height: 120px;
 
-    background-color: var(--inactive-filter-color);
+    background-color: $inactive-filter-color;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

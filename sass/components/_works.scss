@@ -1,6 +1,6 @@
 /* Чем мы занимаемся */
 .work {
-    background-color: var(--primary-background-color);
+    background-color: $primary-background-color;
     padding-top: 0px;
 }
 .work-h {
@@ -11,7 +11,7 @@
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
 }
 .work-images {
     display: flex;
@@ -40,8 +40,8 @@
     width: 370px;
     height: 70px;
 
-    background: var(--secondary-background-color);
-    color: var(--light-color);
+    background: $secondary-background-color;
+    color: $light-color;
     opacity: 80%;
 }
 .work-descript p {

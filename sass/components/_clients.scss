@@ -1,6 +1,6 @@
 /* Постоянные клиенты */
 .clients {
-    background-color: var(--primary-background-color);
+    background-color: $primary-background-color;
 }
 .clients-h {
     margin: 0 0 50px 0;
@@ -10,7 +10,7 @@
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
 }
 .clients-img {
     display: flex;
@@ -35,22 +35,22 @@
     height: 88px;
     text-align: center;
 
-    color: var(--icon-primary);
-    background-color: var(--primary-background-color);
+    color: $icon-primary;
+    background-color: $primary-background-color;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    border: 1px solid #AFB1B8;
+    border: 1px solid $icon-primary;
     border-radius: 4px;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color $duration-time $timing-func, border-color $duration-time $timing-func;
 }
 .client-logo {
     fill: currentColor;
 }
 .clients-img .link-svg:hover,
 .clients-img .link-svg:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color) ;
+    color: $accent-color;
+    border-color: $accent-color;
 }
 /* Постоянные клиенты конец */

@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: center;
 
-    background: var(--primary-background-color);
-    border-bottom: 1px solid var(--header-border);
+    background: $primary-background-color;
+    border-bottom: 1px solid $header-border;
 }
 .header-div {
     display: flex;
@@ -17,5 +17,4 @@
     padding-right: 15px;
     width: 1200px;
 }
-
 /* Навигация хедер конец */

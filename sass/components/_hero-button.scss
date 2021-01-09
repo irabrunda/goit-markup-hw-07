@@ -1,9 +1,9 @@
 .hero-section .hero-button {
     display: block;
     padding: 8px 30px;
-    background-color: var(--button-bg-color);
+    background-color: $button-bg-color;
     border: none;
-    box-shadow: 0 4px 4px var(--button-shadow);
+    box-shadow: 0 4px 4px $button-shadow;
     border-radius: 4px;
 
     font-weight: 700;
@@ -11,6 +11,6 @@
     line-height: 1.88;
 
     letter-spacing: 0.06em;
-    color: var(--light-color);
+    color: $light-color;
     cursor: pointer;
 }
