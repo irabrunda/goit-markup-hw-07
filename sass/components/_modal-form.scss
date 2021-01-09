@@ -153,11 +153,11 @@
 
     border-radius: 2px;    
     color: $primary-text-color;
-    background-image: url(./images/icons/checkbox.svg);
+    background-image: url(../../images/icons/checkbox.svg);
 }
 .checkbox-input:checked + .checkbox-new::after{
     background-color: $accent-color;
-    background-image: url(./images/icons/checkmark.svg);
+    background-image: url(../../images/icons/checkmark.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 11px 8px;
