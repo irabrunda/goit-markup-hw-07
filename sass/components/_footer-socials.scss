@@ -18,12 +18,13 @@
     display: flex;
     margin: 0;
     padding: 0;
+
+    & .item + .item {
+        margin-left: 10px;
+    }
 }
 .smm-icons .item {
     list-style: none;
-}
-.smm-icons .item + .item {
-    margin-left: 10px;
 }
 .smm-icons .f-link {
     @extend %centeredFlex;
@@ -36,15 +37,16 @@
     border-radius: 50%;
 
     transition: background-color $duration-time $timing-func;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
 }
 .footer-icon {
     width: 20px;
     height: 20px;
     cursor: pointer;
     fill: currentColor;
-}
-.smm-icons a:hover,
-.smm-icons a:focus {
-    background-color: $accent-color;
 }
 /* Соцсети Футер конец */

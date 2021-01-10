@@ -1,17 +1,16 @@
 /* Фильтры */
 .filters {
-    // display: flex;
-    // justify-content: center;
     @extend %centeredFlex;
     margin: 0 0 50px 0;
     padding: 0;
+
+    & .item + .item {
+        margin-left: 8px;
+    }
 }
 .filters .item {
     list-style: none;
     display: inline-block;
-}
-.filters .item + .item {
-    margin-left: 8px;
 }
 .filters .filter {
     padding: 6px 22px 6px 22px;
@@ -27,13 +26,14 @@
     box-shadow: none;
 
     transition: color $duration-time $timing-func, background-color $duration-time $timing-func, box-shadow $duration-time $timing-func;
-}
-.filters .filter:hover,
-.filters .filter:focus {
-    color: $light-color;
-    background: $accent-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border: none;
-    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+        color: $light-color;
+        background: $accent-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border: none;
+        border-radius: 4px;
+    }
 }
 /* Фильтры конец */

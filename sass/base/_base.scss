@@ -1,6 +1,9 @@
 .body {
     font-family: $main-font;
 }
+a {
+    text-decoration: none;
+}
 .section {
     background-color: $primary-background-color;
     padding-top: 94px;

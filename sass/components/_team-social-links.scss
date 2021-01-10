@@ -4,9 +4,10 @@
     margin: 0;
     padding: 0;
     color: $icon-primary;
-}
-.team-social .link + .link {
-    margin-left: 10px;
+
+    & .link + .link {
+        margin-left: 10px;
+    }
 }
 .team-social .link {
     list-style: none;
@@ -28,16 +29,17 @@
     @extend %bgCommon;
     
     transition: color $duration-time $timing-func, background-color $duration-time $timing-func;
+
+    &:hover,
+    &:focus {
+        color: $light-color;
+        background-color: $accent-color;
+    }
 }
 .team-social-icon {
     width: 20px;
     height: 20px;
     cursor: pointer;
     fill: currentColor;
-}
-.link .social-icon:hover,
-.link .social-icon:focus {
-    color: $light-color;
-    background-color: $accent-color;
 }
 /* Наша команда соцсети конец */

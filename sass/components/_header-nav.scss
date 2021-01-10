@@ -1,41 +1,8 @@
 .site-nav {    
-    // display: flex;
-    // align-items: center;
     @extend %centeredFlex;
-}
-a {
-    text-decoration: none;
-}
-.nav-top .current {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 28px;
-    color: $accent-color;
-}
-.top-link.current::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    border:none;
-    border-radius: 2px;
-    
-    background-color: $accent-color;
-    transform: scaleX(1);
-    transition: scale $duration-time $timing-func;
-}
-.top-link:hover::after,
-.top-link:focus::after {
-    transform: scale(0.8);
 }
 .nav-top {
     list-style: none;
-    // display: flex;
-    // align-items: center;
     @extend %centeredFlex;
     margin: 0;
     padding-left: 0;
@@ -43,7 +10,30 @@ a {
 .nav-top .item + .item {
     margin-left: 50px;
 }
-.nav-top a {
+.nav-top .current {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 28px;
+    color: $accent-color;
+
+    &::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        border:none;
+        border-radius: 2px;
+        
+        background-color: $accent-color;
+        transform: scaleX(1);
+        transition: scale $duration-time $timing-func; 
+    }
+}
+.top-link {
     display: block;
     justify-content: center;
     padding-top: 32px;
@@ -51,8 +41,14 @@ a {
 
     @extend %textTop;
     transition: color $duration-time $timing-func;
-}
-.nav-top .top-link:hover,
-.nav-top .top-link:focus {
-    color: $accent-color;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+    
+    &:hover::after,
+    &:focus::after {
+        transform: scale(0.8);
+    }
 }

@@ -19,9 +19,10 @@
     padding-left:0;
     margin-top: 0;
     margin-bottom: 0;
-}
-.clients-img .item + .item {
-    margin-left: 30px;
+
+    & .item + .item {
+        margin-left: 30px;
+    }
 }
 .clients-img .item {
     list-style: none;
@@ -41,13 +42,14 @@
     border: 1px solid $icon-primary;
     border-radius: 4px;
     transition: color $duration-time $timing-func, border-color $duration-time $timing-func;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        border-color: $accent-color;
+    }
 }
 .client-logo {
     fill: currentColor;
-}
-.clients-img .link-svg:hover,
-.clients-img .link-svg:focus {
-    color: $accent-color;
-    border-color: $accent-color;
 }
 /* Постоянные клиенты конец */

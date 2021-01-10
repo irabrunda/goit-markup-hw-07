@@ -14,6 +14,22 @@
 .modal-form {
     display: flex;
     flex-direction: column;
+
+    & input:focus,
+    & textarea:focus {
+        border: 1px solid $accent-color;
+        cursor: pointer;
+    }
+    & input::placeholder {
+        cursor: pointer;
+    }
+    & input:focus::placeholder {
+        cursor: pointer;
+    }
+    & input:focus ~ svg {
+        fill: $accent-color;
+        cursor: pointer;
+    }
 }
 .form-field {
     position: relative;
@@ -33,6 +49,11 @@
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     outline: none;
+
+    &:focus + .icon-form {
+        fill: $accent-color;
+        transition: $duration-time $timing-func;
+    }
 }
 .form-field label {
     margin-bottom: 4px;
@@ -43,22 +64,6 @@
     letter-spacing: 0.01em;
 
     color: $secondary-text-color;
-}
-
-.modal-form input:focus,
-.modal-form textarea:focus {
-  border: 1px solid $accent-color;
-  cursor: pointer;
-}
-.modal-form input::placeholder {
-  cursor: pointer;
-}
-.modal-form input:focus::placeholder {
-  cursor: pointer;
-}
-.modal-form input:focus ~ svg {
-  fill: $accent-color;
-  cursor: pointer;
 }
 .icon-form {
     position: absolute;
@@ -72,11 +77,7 @@
 .icon-symbol {
     width: 18px;
     height: 18px;
-  }
-.form-input:focus + .icon-form {
-    fill: $accent-color;
-    transition: $duration-time $timing-func;
-  }
+}
 .form-label-text {
     resize: none;
     outline: none;
@@ -88,15 +89,16 @@
 
     border-radius: 4px;    
     border: 1px solid rgba(33, 33, 33, 0.2);
-}
-.form-label-text::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.01;
 
-    color: $secondary-text-color;
-    opacity: 0.5;
+    &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.17;
+        letter-spacing: 0.01;
+    
+        color: $secondary-text-color;
+        opacity: 0.5;
+    }
 }
 .form-checkbox {
     /* display: flex;
@@ -110,28 +112,45 @@
 
     color: $secondary-text-color;
 }
-.form-checkbox a {
+.agreement-link a {
     color: $accent-color;
-    text-decoration: none;
-}
-.agreement-link::after {
-    position: absolute;
-    right: 17px;
-    bottom: 6px;
-    z-index: 3;
 
-    content: "";
-    display: block;
-    width: 29%;
-    height: 1px;
-    border: none;
+    &::after {
+        position: absolute;
+        right: 9px;
+        bottom: 6px;
+        z-index: 3;
     
-    background-color: $accent-color;
+        content: "";
+        display: block;
+        width: 29%;
+        height: 1px;
+        border: none;
+        
+        background-color: $accent-color;
+    }
 }
 .checkbox-label {
-    // display: flex;
-    // align-items: center;
     @extend %centeredFlex;
+
+    & .checkbox-new::after {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        margin-right: 8px;
+    
+        border-radius: 2px;    
+        color: $primary-text-color;
+        background-image: url(../../images/icons/checkbox.svg);
+    }
+    & .checkbox-input:checked + .checkbox-new::after{
+        background-color: $accent-color;
+        background-image: url(../../images/icons/checkmark.svg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 11px 8px;
+    }
 }
 .visually-hidden {
     position: absolute;
@@ -143,23 +162,5 @@
     border: 0;
 
     clip: rect(0 0 0 0);
-}
-.checkbox-new::after {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    margin-right: 8px;
-
-    border-radius: 2px;    
-    color: $primary-text-color;
-    background-image: url(../../images/icons/checkbox.svg);
-}
-.checkbox-input:checked + .checkbox-new::after{
-    background-color: $accent-color;
-    background-image: url(../../images/icons/checkmark.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 11px 8px;
 }
 /* Форма модальное окно конец*/

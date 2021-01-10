@@ -1,6 +1,4 @@
 .header .contacts {
-    // display: flex;
-    // align-items: center;
     @extend %centeredFlex;
     margin-left: 305px;
 }
@@ -10,23 +8,18 @@
 }
 .contacts .item {
     display: inline-flex;
-    text-decoration: none;
     transition: color $duration-time $timing-func;
+    @extend %textTop;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
 .contacts .item + .item {
     margin-left: 30px;
 }
-.contacts .mail-top {
-    @extend %textTop;
-}
-.contacts .tel-top {
-    @extend %textTop;
-}
 .contacts-icon {
     margin-right: 10px;
     fill: currentColor;
-}
-.contacts .item:hover,
-.contacts .item:focus {
-    color: $accent-color;
 }

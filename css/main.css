@@ -271,6 +271,10 @@ summary {
   font-family: Roboto, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .section {
   background-color: #ffffff;
   padding-top: 94px;
@@ -289,7 +293,7 @@ summary {
   background-position: center;
 }
 
-.contacts .tel-top, .contacts .mail-top, .nav-top a {
+.contacts .item, .top-link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -331,8 +335,14 @@ summary {
   color: #000000;
 }
 
-a {
-  text-decoration: none;
+.nav-top {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.nav-top .item + .item {
+  margin-left: 50px;
 }
 
 .nav-top .current {
@@ -341,8 +351,7 @@ a {
   padding-bottom: 28px;
   color: #2196F3;
 }
-
-.top-link.current::after {
+.nav-top .current::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -357,32 +366,18 @@ a {
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-link:hover::after,
-.top-link:focus::after {
-  transform: scale(0.8);
-}
-
-.nav-top {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-.nav-top .item + .item {
-  margin-left: 50px;
-}
-
-.nav-top a {
+.top-link {
   display: block;
   justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.nav-top .top-link:hover,
-.nav-top .top-link:focus {
+.top-link:hover, .top-link:focus {
   color: #2196F3;
+}
+.top-link:hover::after, .top-link:focus::after {
+  transform: scale(0.8);
 }
 
 .header .contacts {
@@ -396,8 +391,10 @@ a {
 
 .contacts .item {
   display: inline-flex;
-  text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts .item:hover, .contacts .item:focus {
+  color: #2196F3;
 }
 
 .contacts .item + .item {
@@ -407,11 +404,6 @@ a {
 .contacts-icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.contacts .item:hover,
-.contacts .item:focus {
-  color: #2196F3;
 }
 
 /* Герой */
@@ -469,7 +461,6 @@ a {
   padding-left: 0;
   margin: 0;
 }
-
 .features-list .item + .item {
   margin-left: 30px;
 }
@@ -595,6 +586,9 @@ a {
   margin-top: 0;
   margin-bottom: 0;
 }
+.team-members .item + .item {
+  margin-left: 30px;
+}
 
 .team-members li {
   list-style: none;
@@ -617,11 +611,7 @@ a {
   padding-left: 32px;
 }
 
-.team-members .item + .item {
-  margin-left: 30px;
-}
-
-.team .team-members h3 {
+.team-members h3 {
   margin: 0 0 10px 0;
   font-weight: 500;
   font-size: 16px;
@@ -630,7 +620,7 @@ a {
   color: #212121;
 }
 
-.team .team-members p {
+.team-members p {
   margin: 0 0 16px 0;
   font-weight: 400;
   font-size: 16px;
@@ -646,7 +636,6 @@ a {
   padding: 0;
   color: #AFB1B8;
 }
-
 .team-social .link + .link {
   margin-left: 10px;
 }
@@ -668,18 +657,16 @@ a {
   background-color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.link .social-icon:hover, .link .social-icon:focus {
+  color: #FFFFFF;
+  background-color: #2196F3;
+}
 
 .team-social-icon {
   width: 20px;
   height: 20px;
   cursor: pointer;
   fill: currentColor;
-}
-
-.link .social-icon:hover,
-.link .social-icon:focus {
-  color: #FFFFFF;
-  background-color: #2196F3;
 }
 
 /* Наша команда соцсети конец */
@@ -705,7 +692,6 @@ a {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 .clients-img .item + .item {
   margin-left: 30px;
 }
@@ -726,15 +712,13 @@ a {
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.clients-img .link-svg:hover, .clients-img .link-svg:focus {
+  color: #2196F3;
+  border-color: #2196F3;
+}
 
 .client-logo {
   fill: currentColor;
-}
-
-.clients-img .link-svg:hover,
-.clients-img .link-svg:focus {
-  color: #2196F3;
-  border-color: #2196F3;
 }
 
 /* Постоянные клиенты конец */
@@ -752,6 +736,7 @@ a {
 
 /* Футер конец */
 .footer .logo-footer {
+  text-decoration: none;
   display: block;
   margin-bottom: 20px;
   font-family: Raleway, sans-serif;
@@ -804,13 +789,12 @@ a {
   margin: 0;
   padding: 0;
 }
+.smm-icons .item + .item {
+  margin-left: 10px;
+}
 
 .smm-icons .item {
   list-style: none;
-}
-
-.smm-icons .item + .item {
-  margin-left: 10px;
 }
 
 .smm-icons .f-link {
@@ -821,17 +805,15 @@ a {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.smm-icons .f-link:hover, .smm-icons .f-link:focus {
+  background-color: #2196F3;
+}
 
 .footer-icon {
   width: 20px;
   height: 20px;
   cursor: pointer;
   fill: currentColor;
-}
-
-.smm-icons a:hover,
-.smm-icons a:focus {
-  background-color: #2196F3;
 }
 
 /* Соцсети Футер конец */
@@ -865,7 +847,6 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
-
 .footer-input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -877,7 +858,6 @@ a {
 .btn {
   text-decoration: none;
   display: inline-flex;
-  border: none;
   margin: 0 0 0 12px;
   padding: 10px 28px 10px 29px;
   border: none;
@@ -953,6 +933,9 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
+.modal-close:hover, .modal-close:focus {
+  color: #2196F3;
+}
 
 .close-icon {
   position: absolute;
@@ -964,11 +947,6 @@ a {
   fill: currentColor;
   border-radius: 50%;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close:hover,
-.model-close:focus {
-  color: #2196F3;
 }
 
 /* модальное окно конец */
@@ -987,6 +965,20 @@ a {
 .modal-form {
   display: flex;
   flex-direction: column;
+}
+.modal-form input:focus, .modal-form textarea:focus {
+  border: 1px solid #2196F3;
+  cursor: pointer;
+}
+.modal-form input::placeholder {
+  cursor: pointer;
+}
+.modal-form input:focus::placeholder {
+  cursor: pointer;
+}
+.modal-form input:focus ~ svg {
+  fill: #2196F3;
+  cursor: pointer;
 }
 
 .form-field {
@@ -1007,6 +999,10 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
 }
+.form-input:focus + .icon-form {
+  fill: #2196F3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .form-field label {
   margin-bottom: 4px;
@@ -1015,25 +1011,6 @@ a {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
-}
-
-.modal-form input:focus,
-.modal-form textarea:focus {
-  border: 1px solid #2196F3;
-  cursor: pointer;
-}
-
-.modal-form input::placeholder {
-  cursor: pointer;
-}
-
-.modal-form input:focus::placeholder {
-  cursor: pointer;
-}
-
-.modal-form input:focus ~ svg {
-  fill: #2196F3;
-  cursor: pointer;
 }
 
 .icon-form {
@@ -1050,11 +1027,6 @@ a {
   height: 18px;
 }
 
-.form-input:focus + .icon-form {
-  fill: #2196F3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .form-label-text {
   resize: none;
   outline: none;
@@ -1065,7 +1037,6 @@ a {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
-
 .form-label-text::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -1086,14 +1057,12 @@ a {
   color: #757575;
 }
 
-.form-checkbox a {
+.agreement-link a {
   color: #2196F3;
-  text-decoration: none;
 }
-
-.agreement-link::after {
+.agreement-link a::after {
   position: absolute;
-  right: 17px;
+  right: 9px;
   bottom: 6px;
   z-index: 3;
   content: "";
@@ -1102,6 +1071,24 @@ a {
   height: 1px;
   border: none;
   background-color: #2196F3;
+}
+
+.checkbox-label .checkbox-new::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border-radius: 2px;
+  color: #212121;
+  background-image: url(../../images/icons/checkbox.svg);
+}
+.checkbox-label .checkbox-input:checked + .checkbox-new::after {
+  background-color: #2196F3;
+  background-image: url(../../images/icons/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 11px 8px;
 }
 
 .visually-hidden {
@@ -1113,25 +1100,6 @@ a {
   padding: 0;
   border: 0;
   clip: rect(0 0 0 0);
-}
-
-.checkbox-new::after {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
-  border-radius: 2px;
-  color: #212121;
-  background-image: url(../../images/icons/checkbox.svg);
-}
-
-.checkbox-input:checked + .checkbox-new::after {
-  background-color: #2196F3;
-  background-image: url(../../images/icons/checkmark.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 11px 8px;
 }
 
 /* Форма модальное окно конец*/
@@ -1163,14 +1131,13 @@ a {
   margin: 0 0 50px 0;
   padding: 0;
 }
+.filters .item + .item {
+  margin-left: 8px;
+}
 
 .filters .item {
   list-style: none;
   display: inline-block;
-}
-
-.filters .item + .item {
-  margin-left: 8px;
 }
 
 .filters .filter {
@@ -1186,9 +1153,7 @@ a {
   box-shadow: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.filters .filter:hover,
-.filters .filter:focus {
+.filters .filter:hover, .filters .filter:focus {
   color: #FFFFFF;
   background: #2196F3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);

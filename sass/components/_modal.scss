@@ -47,12 +47,16 @@
     color: $dark-color;
     background-color: $primary-background-color;
     @extend %bgCommon;
-
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     
     transition: color $duration-time $timing-func;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
 .close-icon {
     position: absolute;
@@ -64,9 +68,5 @@
     fill: currentColor;
     border-radius: 50%;
     transition: color $duration-time $timing-func;
-}
-.modal-close:hover,
-.model-close:focus {
-    color: $accent-color;
 }
 /* модальное окно конец */
