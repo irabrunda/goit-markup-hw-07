@@ -302,6 +302,22 @@ a {
   color: #757575;
 }
 
+.clients-h, .team .team-h, .work-h {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.work-descript p, .features h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 /* Навигация хедер */
 .header {
   background: #ffffff;
@@ -472,11 +488,6 @@ a {
 
 .features h3 {
   margin: 30px 0 10px 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #212121;
 }
 
@@ -514,11 +525,6 @@ a {
 .work-h {
   margin: 0 0 50px 0;
   text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .work-images {
@@ -527,6 +533,9 @@ a {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+}
+.work-images .item + .item {
+  margin-left: 30px;
 }
 
 .work-images li {
@@ -537,10 +546,6 @@ a {
 .work-images .item {
   display: block;
   z-index: 2;
-}
-
-.work-images .item + .item {
-  margin-left: 30px;
 }
 
 .work-descript {
@@ -557,11 +562,6 @@ a {
   display: block;
   margin: 0;
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 /* Чем мы занимаемся конец */
@@ -573,11 +573,6 @@ a {
 .team .team-h {
   margin: 0 0 50px 0;
   text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .team-members {
@@ -678,10 +673,6 @@ a {
 .clients-h {
   margin: 0 0 50px 0;
   text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
