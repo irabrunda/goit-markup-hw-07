@@ -1,4 +1,41 @@
 @charset "UTF-8";
+.filters, .checkbox-label, .footer-input::placeholder, .smm-icons .f-link, .clients-img .link-svg, .link .social-icon, .team-social, .work-descript, .feature-icon-div, .hero-div, .header .contacts, .nav-top, .site-nav, .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close, .smm-icons .f-link, .clients-img .link-svg, .link .social-icon, .feature-icon-div, .hero-bg {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.contacts .item, .top-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.clients-h, .team .team-h, .work-h {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.work-descript p, .features h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -279,43 +316,6 @@ a {
   background-color: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.filters, .checkbox-label, .footer-input::placeholder, .smm-icons .f-link, .clients-img .link-svg, .link .social-icon, .team-social, .work-descript, .feature-icon-div, .hero-div, .header .contacts, .nav-top, .site-nav, .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-close, .smm-icons .f-link, .clients-img .link-svg, .link .social-icon, .feature-icon-div, .hero-bg {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.contacts .item, .top-link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-
-.clients-h, .team .team-h, .work-h {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.work-descript p, .features h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 /* Навигация хедер */
